@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const DotDex = require('./lib/dotdex');
 
 function getAction (action, attribute, path) {
