@@ -1,0 +1,28 @@
+{
+  "name": "dotdex",
+  "version": "1.0.0",
+  "description": "a dot file manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ivy4vera/dotdex.git"
+  },
+  "keywords": [
+    "dot",
+    "file"
+  ],
+  "author": "Ivy Witter <ivy4vera@icloud.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivy4vera/dotdex/issues"
+  },
+  "homepage": "https://github.com/ivy4vera/dotdex#readme",
+  "dependencies": {
+    "ncp": "^2.0.0",
+    "rimraf": "^2.6.3",
+    "simple-git": "^1.110.0"
+  }
+}
