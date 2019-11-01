@@ -1,0 +1,692 @@
+Info 0    [17:54:56.535] Starting TS Server
+Info 1    [17:54:56.536] Version: 3.6.3
+Info 2    [17:54:56.537] Arguments: /Users/ivy/.nvm/versions/node/v10.15.3/bin/node /Users/ivy/.nvm/versions/node/v10.15.3/bin/tsserver --logFile /Users/ivy/projects/dotdex/.log/tsserver.log --logVerbosity info --cancellationPipeName /private/var/folders/s3/ws835c_170v2w7b_fqnj_wjc0000gn/T/4fb69dc32039d9e2c9ba93dc34e45307/tscancellation*
+Info 3    [17:54:56.537] Platform: darwin NodeVersion: 10 CaseSensitive: false
+Info 4    [17:54:56.552] Search path: /Users/ivy/projects/dotdex
+Info 5    [17:54:56.554] For info: /Users/ivy/projects/dotdex/package.json :: No config files found.
+Info 6    [17:54:56.560] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 7    [17:54:56.583] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 1 structureChanged: true Elapsed: 23ms
+Info 8    [17:54:56.583] Project '/dev/null/inferredProject1*' (Inferred) 
+Info 9    [17:54:56.583] 	Files (0)
+
+Info 10   [17:54:56.583] -----------------------------------------------
+Err 11    [17:54:56.603] Exception on executing command {"command":"getCodeFixes","seq":3,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":1,"startOffset":1,"endLine":1,"endOffset":1,"errorCodes":[]}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getCodeFixesAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125861:30)
+        at IOSession.Session.getCodeFixes (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135063:64)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133850:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Err 12    [17:54:56.605] Exception on executing command {"command":"getApplicableRefactors","seq":5,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":1,"startOffset":1,"endLine":1,"endOffset":1}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:126100:24)
+        at IOSession.Session.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135013:53)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133868:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Err 13    [17:54:56.609] Exception on executing command delayed processing of request 4:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getSyntacticDiagnostics (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125527:52)
+        at IOSession.Session.syntacticCheck (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134109:87)
+        at checkOne (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134141:27)
+        at MultistepOperation.executeAction (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133325:25)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133315:100
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at Object.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133914:87)
+        at Timeout._onTimeout (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133315:41)
+        at ontimeout (timers.js:436:11)
+        at tryOnTimeout (timers.js:300:5)
+        at listOnTimeout (timers.js:263:5)
+        at Timer.processTimers (timers.js:223:10)
+Err 14    [17:54:57.472] Exception on executing command {"command":"getCodeFixes","seq":6,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":2,"startOffset":1,"endLine":2,"endOffset":1,"errorCodes":[]}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getCodeFixesAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125861:30)
+        at IOSession.Session.getCodeFixes (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135063:64)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133850:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Err 15    [17:54:57.473] Exception on executing command {"command":"getApplicableRefactors","seq":7,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":2,"startOffset":1,"endLine":2,"endOffset":1}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:126100:24)
+        at IOSession.Session.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135013:53)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133868:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Err 16    [17:54:57.741] Exception on executing command {"command":"getCodeFixes","seq":8,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":3,"startOffset":1,"endLine":3,"endOffset":1,"errorCodes":[]}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getCodeFixesAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125861:30)
+        at IOSession.Session.getCodeFixes (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135063:64)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133850:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Err 17    [17:54:57.742] Exception on executing command {"command":"getApplicableRefactors","seq":9,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":3,"startOffset":1,"endLine":3,"endOffset":1}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:126100:24)
+        at IOSession.Session.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135013:53)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133868:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Err 18    [17:54:58.216] Exception on executing command {"command":"getCodeFixes","seq":10,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":4,"startOffset":1,"endLine":4,"endOffset":1,"errorCodes":[]}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getCodeFixesAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125861:30)
+        at IOSession.Session.getCodeFixes (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135063:64)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133850:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Err 19    [17:54:58.217] Exception on executing command {"command":"getApplicableRefactors","seq":11,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":4,"startOffset":1,"endLine":4,"endOffset":1}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:126100:24)
+        at IOSession.Session.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135013:53)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133868:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Err 20    [17:54:58.457] Exception on executing command {"command":"getCodeFixes","seq":12,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":3,"startOffset":22,"endLine":3,"endOffset":22,"errorCodes":[]}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getCodeFixesAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125861:30)
+        at IOSession.Session.getCodeFixes (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135063:64)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133850:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Err 21    [17:54:58.457] Exception on executing command {"command":"getApplicableRefactors","seq":13,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":3,"startOffset":22,"endLine":3,"endOffset":22}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:126100:24)
+        at IOSession.Session.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135013:53)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133868:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Err 22    [17:54:58.647] Exception on executing command {"command":"quickinfo","seq":14,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","line":3,"offset":21}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getQuickInfoAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125573:30)
+        at IOSession.Session.getQuickInfoWorker (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134638:62)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133675:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Err 23    [17:54:58.859] Exception on executing command {"command":"getCodeFixes","seq":15,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":3,"startOffset":21,"endLine":3,"endOffset":21,"errorCodes":[]}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getCodeFixesAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125861:30)
+        at IOSession.Session.getCodeFixes (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135063:64)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133850:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Err 24    [17:54:58.860] Exception on executing command {"command":"getApplicableRefactors","seq":16,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":3,"startOffset":21,"endLine":3,"endOffset":21}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:126100:24)
+        at IOSession.Session.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135013:53)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133868:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Err 25    [17:54:58.861] Exception on executing command {"command":"quickinfo","seq":17,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","line":3,"offset":20}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getQuickInfoAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125573:30)
+        at IOSession.Session.getQuickInfoWorker (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134638:62)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133675:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Err 26    [17:54:59.69] Exception on executing command {"command":"getCodeFixes","seq":18,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":3,"startOffset":20,"endLine":3,"endOffset":20,"errorCodes":[]}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getCodeFixesAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125861:30)
+        at IOSession.Session.getCodeFixes (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135063:64)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133850:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Err 27    [17:54:59.70] Exception on executing command {"command":"documentHighlights","seq":19,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","line":3,"offset":20,"filesToSearch":["/Users/ivy/projects/dotdex/package.json"]}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getDocumentHighlights (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125654:30)
+        at IOSession.Session.getDocumentHighlights (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134406:71)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133830:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Err 28    [17:54:59.71] Exception on executing command {"command":"getApplicableRefactors","seq":20,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":3,"startOffset":20,"endLine":3,"endOffset":20}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:126100:24)
+        at IOSession.Session.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135013:53)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133868:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Err 29    [17:54:59.367] Exception on executing command {"command":"quickinfo","seq":21,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","line":3,"offset":20}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getQuickInfoAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125573:30)
+        at IOSession.Session.getQuickInfoWorker (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134638:62)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133675:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Err 30    [17:54:59.369] Exception on executing command {"command":"signatureHelp","seq":22,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","line":3,"offset":20}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getSignatureHelpItems (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125708:30)
+        at IOSession.Session.getSignatureHelpItems (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134816:62)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133744:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Info 31   [17:54:59.458] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 32   [17:54:59.461] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 2 structureChanged: false Elapsed: 3ms
+Err 33    [17:54:59.462] Exception on executing command {"command":"quickinfo","seq":24,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","line":3,"offset":19}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getQuickInfoAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125573:30)
+        at IOSession.Session.getQuickInfoWorker (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134638:62)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133675:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Err 34    [17:54:59.661] Exception on executing command delayed processing of request 25:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getSyntacticDiagnostics (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125527:52)
+        at IOSession.Session.syntacticCheck (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134109:87)
+        at checkOne (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134141:27)
+        at MultistepOperation.executeAction (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133325:25)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133315:100
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at Object.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133914:87)
+        at Timeout._onTimeout (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133315:41)
+        at ontimeout (timers.js:436:11)
+        at tryOnTimeout (timers.js:300:5)
+        at listOnTimeout (timers.js:263:5)
+        at Timer.processTimers (timers.js:223:10)
+Err 35    [17:54:59.667] Exception on executing command {"command":"getCodeFixes","seq":26,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":3,"startOffset":19,"endLine":3,"endOffset":19,"errorCodes":[]}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getCodeFixesAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125861:30)
+        at IOSession.Session.getCodeFixes (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135063:64)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133850:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Err 36    [17:54:59.668] Exception on executing command {"command":"getApplicableRefactors","seq":27,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":3,"startOffset":19,"endLine":3,"endOffset":19}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:126100:24)
+        at IOSession.Session.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135013:53)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133868:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Info 37   [17:54:59.754] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 38   [17:54:59.754] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 3 structureChanged: false Elapsed: 0ms
+Err 39    [17:54:59.755] Exception on executing command {"command":"quickinfo","seq":29,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","line":3,"offset":20}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getQuickInfoAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125573:30)
+        at IOSession.Session.getQuickInfoWorker (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134638:62)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133675:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Err 40    [17:54:59.954] Exception on executing command delayed processing of request 30:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getSyntacticDiagnostics (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125527:52)
+        at IOSession.Session.syntacticCheck (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134109:87)
+        at checkOne (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134141:27)
+        at MultistepOperation.executeAction (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133325:25)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133315:100
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at Object.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133914:87)
+        at Timeout._onTimeout (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133315:41)
+        at ontimeout (timers.js:436:11)
+        at tryOnTimeout (timers.js:300:5)
+        at listOnTimeout (timers.js:263:5)
+        at Timer.processTimers (timers.js:223:10)
+Err 41    [17:54:59.968] Exception on executing command {"command":"getCodeFixes","seq":31,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":3,"startOffset":20,"endLine":3,"endOffset":20,"errorCodes":[]}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getCodeFixesAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125861:30)
+        at IOSession.Session.getCodeFixes (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135063:64)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133850:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Err 42    [17:54:59.968] Exception on executing command {"command":"getApplicableRefactors","seq":32,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":3,"startOffset":20,"endLine":3,"endOffset":20}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:126100:24)
+        at IOSession.Session.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135013:53)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133868:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Err 43    [17:55:0.265] Exception on executing command {"command":"quickinfo","seq":33,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","line":3,"offset":20}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getQuickInfoAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125573:30)
+        at IOSession.Session.getQuickInfoWorker (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134638:62)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133675:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Err 44    [17:55:0.266] Exception on executing command {"command":"signatureHelp","seq":34,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","line":3,"offset":20}}:
+
+    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+
+    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
+        at Object.getSignatureHelpItems (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125708:30)
+        at IOSession.Session.getSignatureHelpItems (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134816:62)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133744:61)
+        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
+        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
+        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
+        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
+        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
+        at Interface.emit (events.js:189:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:189:13)
+        at addChunk (_stream_readable.js:284:12)
+        at readableAddChunk (_stream_readable.js:265:11)
+        at Socket.Readable.push (_stream_readable.js:220:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Info 45   [17:55:0.903] Starting updateGraphWorker: Project: /dev/null/inferredProject1*

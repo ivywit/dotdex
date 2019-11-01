@@ -1,0 +1,114 @@
+[17:54:56.872] Global cache location '/Users/ivy/Library/Caches/typescript/3.6', safe file path '/users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/typingsafelist.json', types map path /users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/typesmap.json
+[17:54:56.874] Processing cache location '/Users/ivy/Library/Caches/typescript/3.6'
+[17:54:56.876] Trying to find '/Users/ivy/Library/Caches/typescript/3.6/package.json'...
+[17:54:56.878] Loaded content of '/Users/ivy/Library/Caches/typescript/3.6/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.463"},"devDependencies":{"@types/aphrodite":"^0.5.13","@types/auth0-js":"^9.10.6","@types/classnames":"^2.2.9","@types/codemirror":"0.0.77","@types/color":"^3.0.0","@types/color-convert":"^1.9.0","@types/color-name":"^1.1.1","@types/color-string":"^1.5.0","@types/core-js":"^2.5.2","@types/debug":"^4.1.5","@types/draft-js":"^0.10.36","@types/file-saver":"^2.0.1","@types/geojson":"^7946.0.7","@types/glob":"^7.1.1","@types/highlightjs":"^9.12.0","@types/history":"^4.7.3","@types/inherits":"0.0.30","@types/invariant":"^2.2.30","@types/jwt-decode":"^2.2.1","@types/lodash":"^4.14.140","@types/lodash.capitalize":"^4.2.6","@types/lodash.clamp":"^4.0.6","@types/lodash.clonedeep":"^4.5.6","@types/lodash.get":"^4.4.6","@types/lodash.isequal":"^4.5.5","@types/lodash.throttle":"^4.1.6","@types/mapbox-gl":"^0.54.4","@types/minimatch":"^3.0.3","@types/ncp":"^2.0.1","@types/no-scroll":"^2.1.0","@types/node":"^12.7.11","@types/object-assign":"^4.0.30","@types/ol":"^5.3.5","@types/once":"^1.4.0","@types/path-is-absolute":"^1.0.0","@types/pbf":"^3.0.2","@types/prop-types":"^15.7.3","@types/randomcolor":"^0.5.3","@types/raven-for-redux":"^1.1.1","@types/react":"^16.9.3","@types/react-aria-menubutton":"^6.2.2","@types/react-aria-modal":"^4.0.1","@types/react-autocomplete":"^1.8.5","@types/react-collapse":"^4.0.2","@types/react-color":"^3.0.1","@types/react-dom":"^16.9.1","@types/react-file-reader-input":"^1.1.4","@types/react-icon-base":"^2.1.3","@types/react-motion":"0.0.29","@types/react-redux":"^7.1.4","@types/react-router":"^5.1.0","@types/react-router-dom":"^5.1.0","@types/react-router-hash-link":"^1.2.1","@types/react-router-redux":"^5.0.18","@types/reactcss":"^1.2.3","@types/rimraf":"^2.0.2","@types/warning":"^3.0.0"}}
+[17:54:56.878] Loaded content of '/Users/ivy/Library/Caches/typescript/3.6/package-lock.json'
+[17:54:56.892] Adding entry into typings cache: 'aphrodite' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/aphrodite/index.d.ts'
+[17:54:56.895] Adding entry into typings cache: 'auth0-js' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/auth0-js/index.d.ts'
+[17:54:56.897] Adding entry into typings cache: 'classnames' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/classnames/index.d.ts'
+[17:54:56.900] Adding entry into typings cache: 'codemirror' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/codemirror/index.d.ts'
+[17:54:56.904] Adding entry into typings cache: 'color' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/color/index.d.ts'
+[17:54:56.907] Adding entry into typings cache: 'color-convert' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/color-convert/index.d.ts'
+[17:54:56.909] Adding entry into typings cache: 'color-name' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/color-name/index.d.ts'
+[17:54:56.911] Adding entry into typings cache: 'color-string' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/color-string/index.d.ts'
+[17:54:56.915] Adding entry into typings cache: 'core-js' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/core-js/index.d.ts'
+[17:54:56.917] Adding entry into typings cache: 'debug' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/debug/index.d.ts'
+[17:54:56.920] Adding entry into typings cache: 'draft-js' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/draft-js/index.d.ts'
+[17:54:56.925] Adding entry into typings cache: 'file-saver' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/file-saver/index.d.ts'
+[17:54:56.927] Adding entry into typings cache: 'geojson' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/geojson/index.d.ts'
+[17:54:56.930] Adding entry into typings cache: 'glob' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/glob/index.d.ts'
+[17:54:56.932] Adding entry into typings cache: 'highlightjs' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/highlightjs/index.d.ts'
+[17:54:56.933] Adding entry into typings cache: 'history' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/history/index.d.ts'
+[17:54:56.936] Adding entry into typings cache: 'inherits' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/inherits/index.d.ts'
+[17:54:56.943] Adding entry into typings cache: 'invariant' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/invariant/index.d.ts'
+[17:54:56.947] Adding entry into typings cache: 'jwt-decode' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/jwt-decode/index.d.ts'
+[17:54:56.952] Adding entry into typings cache: 'lodash' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/lodash/ts3.1/index.d.ts'
+[17:54:56.954] Adding entry into typings cache: 'lodash.capitalize' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/lodash.capitalize/index.d.ts'
+[17:54:56.957] Adding entry into typings cache: 'lodash.clamp' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/lodash.clamp/index.d.ts'
+[17:54:56.959] Adding entry into typings cache: 'lodash.clonedeep' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/lodash.clonedeep/index.d.ts'
+[17:54:56.961] Adding entry into typings cache: 'lodash.get' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/lodash.get/index.d.ts'
+[17:54:56.962] Adding entry into typings cache: 'lodash.isequal' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/lodash.isequal/index.d.ts'
+[17:54:56.964] Adding entry into typings cache: 'lodash.throttle' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/lodash.throttle/index.d.ts'
+[17:54:56.966] Adding entry into typings cache: 'mapbox-gl' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/mapbox-gl/index.d.ts'
+[17:54:56.967] Adding entry into typings cache: 'minimatch' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/minimatch/index.d.ts'
+[17:54:56.969] Adding entry into typings cache: 'ncp' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/ncp/index.d.ts'
+[17:54:56.970] Adding entry into typings cache: 'no-scroll' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/no-scroll/index.d.ts'
+[17:54:56.973] Adding entry into typings cache: 'node' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/node/ts3.2/index.d.ts'
+[17:54:56.975] Adding entry into typings cache: 'object-assign' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/object-assign/index.d.ts'
+[17:54:56.977] Adding entry into typings cache: 'ol' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/ol/index.d.ts'
+[17:54:56.978] Adding entry into typings cache: 'once' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/once/index.d.ts'
+[17:54:56.980] Adding entry into typings cache: 'path-is-absolute' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/path-is-absolute/index.d.ts'
+[17:54:56.982] Adding entry into typings cache: 'pbf' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/pbf/index.d.ts'
+[17:54:56.984] Adding entry into typings cache: 'prop-types' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/prop-types/index.d.ts'
+[17:54:56.987] Adding entry into typings cache: 'randomcolor' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/randomcolor/index.d.ts'
+[17:54:56.988] Adding entry into typings cache: 'raven-for-redux' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/raven-for-redux/index.d.ts'
+[17:54:56.994] Adding entry into typings cache: 'react' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/react/index.d.ts'
+[17:54:56.997] Adding entry into typings cache: 'react-aria-menubutton' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/react-aria-menubutton/index.d.ts'
+[17:54:56.999] Adding entry into typings cache: 'react-aria-modal' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/react-aria-modal/index.d.ts'
+[17:54:57.1] Adding entry into typings cache: 'react-autocomplete' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/react-autocomplete/index.d.ts'
+[17:54:57.3] Adding entry into typings cache: 'react-collapse' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/react-collapse/index.d.ts'
+[17:54:57.5] Adding entry into typings cache: 'react-color' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/react-color/index.d.ts'
+[17:54:57.7] Adding entry into typings cache: 'react-dom' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/react-dom/index.d.ts'
+[17:54:57.9] Adding entry into typings cache: 'react-file-reader-input' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/react-file-reader-input/index.d.ts'
+[17:54:57.10] Adding entry into typings cache: 'react-icon-base' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/react-icon-base/index.d.ts'
+[17:54:57.12] Adding entry into typings cache: 'react-motion' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/react-motion/index.d.ts'
+[17:54:57.16] Adding entry into typings cache: 'react-redux' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/react-redux/index.d.ts'
+[17:54:57.19] Adding entry into typings cache: 'react-router' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/react-router/index.d.ts'
+[17:54:57.22] Adding entry into typings cache: 'react-router-dom' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/react-router-dom/index.d.ts'
+[17:54:57.23] Adding entry into typings cache: 'react-router-hash-link' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/react-router-hash-link/index.d.ts'
+[17:54:57.25] Adding entry into typings cache: 'react-router-redux' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/react-router-redux/index.d.ts'
+[17:54:57.26] Adding entry into typings cache: 'reactcss' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/reactcss/index.d.ts'
+[17:54:57.28] Adding entry into typings cache: 'rimraf' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/rimraf/index.d.ts'
+[17:54:57.29] Adding entry into typings cache: 'warning' => '/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/warning/index.d.ts'
+[17:54:57.29] Finished processing cache location '/Users/ivy/Library/Caches/typescript/3.6'
+[17:54:57.30] Process id: 10598
+[17:54:57.30] NPM location: /Users/ivy/.nvm/versions/node/v10.15.3/bin/npm (explicit '--npmLocation' not  provided)
+[17:54:57.30] validateDefaultNpmLocation: false
+[17:54:57.30] Npm config file: /Users/ivy/Library/Caches/typescript/3.6/package.json
+[17:54:57.31] Updating types-registry npm package...
+[17:54:57.31] Exec: /Users/ivy/.nvm/versions/node/v10.15.3/bin/npm install --ignore-scripts types-registry@latest
+[17:54:58.649]     Succeeded. stdout:
+    + types-registry@0.1.463
+    updated 1 package and audited 181 packages in 0.922s
+found 0 vulnerabilities
+
+
+[17:54:58.650] Updated types-registry npm package
+[17:54:58.668] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":[],"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/users/ivy/projects/dotdex","kind":"discover"}
+[17:54:58.682] Loaded safelist from types map file '/users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/typesmap.json'
+[17:54:58.683] Explicitly included types: []
+[17:54:58.684] Typing names in '/users/ivy/projects/dotdex/package.json' dependencies: ["ncp","rimraf","simple-git"]
+[17:54:58.685] Inferred typings from unresolved imports: []
+[17:54:58.686] Result: {"cachedTypingPaths":[],"newTypingNames":["ncp","rimraf","simple-git"],"filesToWatch":["/users/ivy/projects/dotdex/package.json","/users/ivy/projects/dotdex/bower_components","/users/ivy/projects/dotdex/node_modules"]}
+[17:54:58.686] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":["ncp","rimraf","simple-git"],"filesToWatch":["/users/ivy/projects/dotdex/package.json","/users/ivy/projects/dotdex/bower_components","/users/ivy/projects/dotdex/node_modules"]}
+[17:54:58.687] FileWatcher:: Added:: WatchInfo: /users/ivy/projects/dotdex/package.json
+[17:54:58.689] DirectoryWatcher:: Added:: WatchInfo: /users/ivy/projects/dotdex/bower_components
+[17:54:58.690] DirectoryWatcher:: Added:: WatchInfo: /users/ivy/projects/dotdex/node_modules
+[17:54:58.690] Installing typings ["ncp","rimraf","simple-git"]
+[17:54:58.691] 'simple-git':: Entry for package 'simple-git' does not exist in local types registry - skipping...
+[17:54:58.691] Npm config file: /Users/ivy/Library/Caches/typescript/3.6/package.json
+[17:54:58.692] Sending response:
+    {"kind":"event::beginInstallTypes","eventId":1,"typingsInstallerVersion":"3.6.3","projectName":"/dev/null/inferredProject1*"}
+[17:54:58.692] Response has been sent.
+[17:54:58.693] #1 with arguments'["@types/ncp@ts3.6","@types/rimraf@ts3.6"]'.
+[17:54:58.694] Exec: /Users/ivy/.nvm/versions/node/v10.15.3/bin/npm install --ignore-scripts @types/ncp@ts3.6 @types/rimraf@ts3.6 --save-dev --user-agent="typesInstaller/3.6.3"
+[17:55:0.641]     Succeeded. stdout:
+    + @types/rimraf@2.0.3
+    + @types/ncp@2.0.2
+updated 2 packages and audited 181 packages in 1.239s
+found 0 vulnerabilities
+
+
+[17:55:0.642] npm install #1 took: 1949 ms
+[17:55:0.643] Installed typings ["@types/ncp@ts3.6","@types/rimraf@ts3.6"]
+[17:55:0.648] Installed typing files ["/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/ncp/index.d.ts","/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/rimraf/index.d.ts"]
+[17:55:0.649] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true},"typings":["/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/ncp/index.d.ts","/Users/ivy/Library/Caches/typescript/3.6/node_modules/@types/rimraf/index.d.ts"],"unresolvedImports":[],"kind":"action::set"}
+[17:55:0.649] Response has been sent.
+[17:55:0.649] Sending response:
+    {"kind":"event::endInstallTypes","eventId":1,"projectName":"/dev/null/inferredProject1*","packagesToInstall":["@types/ncp@ts3.6","@types/rimraf@ts3.6"],"installSuccess":true,"typingsInstallerVersion":"3.6.3"}
+[17:55:0.649] Response has been sent.
+[17:55:1.174] FileWatcher:: Triggered with /users/ivy/projects/dotdex/package.json eventKind: Changed:: WatchInfo: /users/ivy/projects/dotdex/package.json:: handler is already invoked 'false'
+[17:55:1.174] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","kind":"action::invalidate"}
+[17:55:1.175] Response has been sent.
