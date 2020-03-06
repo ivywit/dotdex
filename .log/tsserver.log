@@ -1,692 +1,892 @@
-Info 0    [17:54:56.535] Starting TS Server
-Info 1    [17:54:56.536] Version: 3.6.3
-Info 2    [17:54:56.537] Arguments: /Users/ivy/.nvm/versions/node/v10.15.3/bin/node /Users/ivy/.nvm/versions/node/v10.15.3/bin/tsserver --logFile /Users/ivy/projects/dotdex/.log/tsserver.log --logVerbosity info --cancellationPipeName /private/var/folders/s3/ws835c_170v2w7b_fqnj_wjc0000gn/T/4fb69dc32039d9e2c9ba93dc34e45307/tscancellation*
-Info 3    [17:54:56.537] Platform: darwin NodeVersion: 10 CaseSensitive: false
-Info 4    [17:54:56.552] Search path: /Users/ivy/projects/dotdex
-Info 5    [17:54:56.554] For info: /Users/ivy/projects/dotdex/package.json :: No config files found.
-Info 6    [17:54:56.560] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
-Info 7    [17:54:56.583] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 1 structureChanged: true Elapsed: 23ms
-Info 8    [17:54:56.583] Project '/dev/null/inferredProject1*' (Inferred) 
-Info 9    [17:54:56.583] 	Files (0)
+Info 0    [0:2:44.167] Starting TS Server
+Info 1    [0:2:44.169] Version: 3.7.2
+Info 2    [0:2:44.169] Arguments: /Users/ivy/.fnm/node-versions/v12.13.1/installation/bin/node /var/folders/s3/ws835c_170v2w7b_fqnj_wjc0000gn/T/fnm-shell-5531709/bin/tsserver --logFile /Users/ivy/projects/dotdex/.log/tsserver.log --logVerbosity info --cancellationPipeName /private/var/folders/s3/ws835c_170v2w7b_fqnj_wjc0000gn/T/33e5b858d556404ceedf972f07d7ada0/tscancellation*
+Info 3    [0:2:44.169] Platform: darwin NodeVersion: 12 CaseSensitive: false
+Info 4    [0:2:45.77] Search path: /Users/ivy/projects/dotdex/lib
+Info 5    [0:2:45.78] For info: /Users/ivy/projects/dotdex/lib/dotdex.js :: No config files found.
+Info 6    [0:2:45.84] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 7    [0:2:46.365] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 1 structureChanged: true Elapsed: 1281ms
+Info 8    [0:2:46.365] Project '/dev/null/inferredProject1*' (Inferred) 
+Info 9    [0:2:46.366] 	Files (8)
 
-Info 10   [17:54:56.583] -----------------------------------------------
-Err 11    [17:54:56.603] Exception on executing command {"command":"getCodeFixes","seq":3,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":1,"startOffset":1,"endLine":1,"endOffset":1,"errorCodes":[]}}:
+Info 10   [0:2:46.366] -----------------------------------------------
+Info 11   [0:2:48.856] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 12   [0:2:49.653] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 2 structureChanged: true Elapsed: 797ms
+Info 13   [0:2:49.653] Project '/dev/null/inferredProject1*' (Inferred) 
+Info 14   [0:2:49.653] 	Files (84)
 
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
+Info 15   [0:2:49.653] -----------------------------------------------
+Info 16   [0:2:49.654] Structure before ensureProjectForOpenFiles:
+Info 17   [0:2:49.655] Structure after ensureProjectForOpenFiles:
+Info 18   [0:2:49.655] got projects updated in background, updating diagnostics for /Users/ivy/projects/dotdex/lib/dotdex.js
+Info 19   [0:2:49.765] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 20   [0:2:49.804] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 3 structureChanged: true Elapsed: 38ms
+Info 21   [0:2:49.804] Project '/dev/null/inferredProject1*' (Inferred) 
+Info 22   [0:2:49.804] 	Files (84)
 
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getCodeFixesAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125861:30)
-        at IOSession.Session.getCodeFixes (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135063:64)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133850:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Err 12    [17:54:56.605] Exception on executing command {"command":"getApplicableRefactors","seq":5,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":1,"startOffset":1,"endLine":1,"endOffset":1}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:126100:24)
-        at IOSession.Session.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135013:53)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133868:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Err 13    [17:54:56.609] Exception on executing command delayed processing of request 4:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getSyntacticDiagnostics (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125527:52)
-        at IOSession.Session.syntacticCheck (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134109:87)
-        at checkOne (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134141:27)
-        at MultistepOperation.executeAction (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133325:25)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133315:100
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at Object.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133914:87)
-        at Timeout._onTimeout (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133315:41)
-        at ontimeout (timers.js:436:11)
-        at tryOnTimeout (timers.js:300:5)
-        at listOnTimeout (timers.js:263:5)
-        at Timer.processTimers (timers.js:223:10)
-Err 14    [17:54:57.472] Exception on executing command {"command":"getCodeFixes","seq":6,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":2,"startOffset":1,"endLine":2,"endOffset":1,"errorCodes":[]}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getCodeFixesAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125861:30)
-        at IOSession.Session.getCodeFixes (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135063:64)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133850:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Err 15    [17:54:57.473] Exception on executing command {"command":"getApplicableRefactors","seq":7,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":2,"startOffset":1,"endLine":2,"endOffset":1}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:126100:24)
-        at IOSession.Session.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135013:53)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133868:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Err 16    [17:54:57.741] Exception on executing command {"command":"getCodeFixes","seq":8,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":3,"startOffset":1,"endLine":3,"endOffset":1,"errorCodes":[]}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getCodeFixesAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125861:30)
-        at IOSession.Session.getCodeFixes (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135063:64)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133850:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Err 17    [17:54:57.742] Exception on executing command {"command":"getApplicableRefactors","seq":9,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":3,"startOffset":1,"endLine":3,"endOffset":1}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:126100:24)
-        at IOSession.Session.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135013:53)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133868:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Err 18    [17:54:58.216] Exception on executing command {"command":"getCodeFixes","seq":10,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":4,"startOffset":1,"endLine":4,"endOffset":1,"errorCodes":[]}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getCodeFixesAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125861:30)
-        at IOSession.Session.getCodeFixes (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135063:64)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133850:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Err 19    [17:54:58.217] Exception on executing command {"command":"getApplicableRefactors","seq":11,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":4,"startOffset":1,"endLine":4,"endOffset":1}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:126100:24)
-        at IOSession.Session.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135013:53)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133868:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Err 20    [17:54:58.457] Exception on executing command {"command":"getCodeFixes","seq":12,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":3,"startOffset":22,"endLine":3,"endOffset":22,"errorCodes":[]}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getCodeFixesAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125861:30)
-        at IOSession.Session.getCodeFixes (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135063:64)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133850:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Err 21    [17:54:58.457] Exception on executing command {"command":"getApplicableRefactors","seq":13,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":3,"startOffset":22,"endLine":3,"endOffset":22}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:126100:24)
-        at IOSession.Session.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135013:53)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133868:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Err 22    [17:54:58.647] Exception on executing command {"command":"quickinfo","seq":14,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","line":3,"offset":21}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getQuickInfoAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125573:30)
-        at IOSession.Session.getQuickInfoWorker (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134638:62)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133675:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Err 23    [17:54:58.859] Exception on executing command {"command":"getCodeFixes","seq":15,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":3,"startOffset":21,"endLine":3,"endOffset":21,"errorCodes":[]}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getCodeFixesAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125861:30)
-        at IOSession.Session.getCodeFixes (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135063:64)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133850:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Err 24    [17:54:58.860] Exception on executing command {"command":"getApplicableRefactors","seq":16,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":3,"startOffset":21,"endLine":3,"endOffset":21}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:126100:24)
-        at IOSession.Session.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135013:53)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133868:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Err 25    [17:54:58.861] Exception on executing command {"command":"quickinfo","seq":17,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","line":3,"offset":20}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getQuickInfoAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125573:30)
-        at IOSession.Session.getQuickInfoWorker (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134638:62)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133675:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Err 26    [17:54:59.69] Exception on executing command {"command":"getCodeFixes","seq":18,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":3,"startOffset":20,"endLine":3,"endOffset":20,"errorCodes":[]}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getCodeFixesAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125861:30)
-        at IOSession.Session.getCodeFixes (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135063:64)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133850:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Err 27    [17:54:59.70] Exception on executing command {"command":"documentHighlights","seq":19,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","line":3,"offset":20,"filesToSearch":["/Users/ivy/projects/dotdex/package.json"]}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getDocumentHighlights (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125654:30)
-        at IOSession.Session.getDocumentHighlights (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134406:71)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133830:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Err 28    [17:54:59.71] Exception on executing command {"command":"getApplicableRefactors","seq":20,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":3,"startOffset":20,"endLine":3,"endOffset":20}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:126100:24)
-        at IOSession.Session.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135013:53)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133868:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Err 29    [17:54:59.367] Exception on executing command {"command":"quickinfo","seq":21,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","line":3,"offset":20}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getQuickInfoAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125573:30)
-        at IOSession.Session.getQuickInfoWorker (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134638:62)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133675:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Err 30    [17:54:59.369] Exception on executing command {"command":"signatureHelp","seq":22,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","line":3,"offset":20}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getSignatureHelpItems (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125708:30)
-        at IOSession.Session.getSignatureHelpItems (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134816:62)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133744:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Info 31   [17:54:59.458] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
-Info 32   [17:54:59.461] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 2 structureChanged: false Elapsed: 3ms
-Err 33    [17:54:59.462] Exception on executing command {"command":"quickinfo","seq":24,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","line":3,"offset":19}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getQuickInfoAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125573:30)
-        at IOSession.Session.getQuickInfoWorker (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134638:62)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133675:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Err 34    [17:54:59.661] Exception on executing command delayed processing of request 25:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getSyntacticDiagnostics (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125527:52)
-        at IOSession.Session.syntacticCheck (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134109:87)
-        at checkOne (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134141:27)
-        at MultistepOperation.executeAction (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133325:25)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133315:100
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at Object.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133914:87)
-        at Timeout._onTimeout (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133315:41)
-        at ontimeout (timers.js:436:11)
-        at tryOnTimeout (timers.js:300:5)
-        at listOnTimeout (timers.js:263:5)
-        at Timer.processTimers (timers.js:223:10)
-Err 35    [17:54:59.667] Exception on executing command {"command":"getCodeFixes","seq":26,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":3,"startOffset":19,"endLine":3,"endOffset":19,"errorCodes":[]}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getCodeFixesAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125861:30)
-        at IOSession.Session.getCodeFixes (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135063:64)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133850:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Err 36    [17:54:59.668] Exception on executing command {"command":"getApplicableRefactors","seq":27,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":3,"startOffset":19,"endLine":3,"endOffset":19}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:126100:24)
-        at IOSession.Session.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135013:53)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133868:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Info 37   [17:54:59.754] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
-Info 38   [17:54:59.754] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 3 structureChanged: false Elapsed: 0ms
-Err 39    [17:54:59.755] Exception on executing command {"command":"quickinfo","seq":29,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","line":3,"offset":20}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getQuickInfoAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125573:30)
-        at IOSession.Session.getQuickInfoWorker (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134638:62)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133675:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Err 40    [17:54:59.954] Exception on executing command delayed processing of request 30:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getSyntacticDiagnostics (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125527:52)
-        at IOSession.Session.syntacticCheck (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134109:87)
-        at checkOne (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134141:27)
-        at MultistepOperation.executeAction (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133325:25)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133315:100
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at Object.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133914:87)
-        at Timeout._onTimeout (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133315:41)
-        at ontimeout (timers.js:436:11)
-        at tryOnTimeout (timers.js:300:5)
-        at listOnTimeout (timers.js:263:5)
-        at Timer.processTimers (timers.js:223:10)
-Err 41    [17:54:59.968] Exception on executing command {"command":"getCodeFixes","seq":31,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":3,"startOffset":20,"endLine":3,"endOffset":20,"errorCodes":[]}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getCodeFixesAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125861:30)
-        at IOSession.Session.getCodeFixes (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135063:64)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133850:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Err 42    [17:54:59.968] Exception on executing command {"command":"getApplicableRefactors","seq":32,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","startLine":3,"startOffset":20,"endLine":3,"endOffset":20}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:126100:24)
-        at IOSession.Session.getApplicableRefactors (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135013:53)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133868:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Err 43    [17:55:0.265] Exception on executing command {"command":"quickinfo","seq":33,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","line":3,"offset":20}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getQuickInfoAtPosition (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125573:30)
-        at IOSession.Session.getQuickInfoWorker (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134638:62)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133675:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Err 44    [17:55:0.266] Exception on executing command {"command":"signatureHelp","seq":34,"type":"request","arguments":{"file":"/Users/ivy/projects/dotdex/package.json","line":3,"offset":20}}:
-
-    Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-
-    Error: Could not find source file: '/Users/ivy/projects/dotdex/package.json'.
-        at getValidSourceFile (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125319:29)
-        at Object.getSignatureHelpItems (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:125708:30)
-        at IOSession.Session.getSignatureHelpItems (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:134816:62)
-        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:133744:61)
-        at /Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:88
-        at IOSession.Session.executeWithRequestId (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135247:28)
-        at IOSession.Session.executeCommand (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135256:33)
-        at IOSession.Session.onMessage (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:135279:35)
-        at Interface.<anonymous> (/Users/ivy/.nvm/versions/node/v10.15.3/lib/node_modules/typescript/lib/tsserver.js:136594:27)
-        at Interface.emit (events.js:189:13)
-        at Interface._onLine (readline.js:290:10)
-        at Interface._normalWrite (readline.js:433:12)
-        at Socket.ondata (readline.js:149:10)
-        at Socket.emit (events.js:189:13)
-        at addChunk (_stream_readable.js:284:12)
-        at readableAddChunk (_stream_readable.js:265:11)
-        at Socket.Readable.push (_stream_readable.js:220:10)
-        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
-Info 45   [17:55:0.903] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 23   [0:2:49.804] -----------------------------------------------
+Info 24   [0:2:49.930] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 25   [0:2:49.949] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 4 structureChanged: true Elapsed: 19ms
+Info 26   [0:2:49.949] Different program with same set of files:: oldProgram.structureIsReused:: 1
+Info 27   [0:2:50.163] Structure before ensureProjectForOpenFiles:
+Info 28   [0:2:50.163] Structure after ensureProjectForOpenFiles:
+Info 29   [0:2:50.163] got projects updated in background, updating diagnostics for /Users/ivy/projects/dotdex/lib/dotdex.js
+Info 30   [0:3:0.957] DirectoryWatcher:: Triggered with /users/ivy/projects/dotdex/lib/.#dotdex.js :: WatchInfo: /users/ivy/projects/dotdex/lib 0 Project: /dev/null/inferredProject1* WatchType: Failed Lookup Locations
+Info 31   [0:3:0.958] Elapsed:: 1ms DirectoryWatcher:: Triggered with /users/ivy/projects/dotdex/lib/.#dotdex.js :: WatchInfo: /users/ivy/projects/dotdex/lib 0 Project: /dev/null/inferredProject1* WatchType: Failed Lookup Locations
+Info 32   [0:3:1.153] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 33   [0:3:1.181] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 5 structureChanged: false Elapsed: 28ms
+Info 34   [0:3:1.181] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 35   [0:3:5.163] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 36   [0:3:5.184] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 6 structureChanged: false Elapsed: 21ms
+Info 37   [0:3:5.184] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 38   [0:3:12.35] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 39   [0:3:12.46] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 7 structureChanged: false Elapsed: 11ms
+Info 40   [0:3:12.46] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 41   [0:3:12.48] getCompletionData: Get current token: 0
+Info 42   [0:3:12.48] getCompletionData: Is inside comment: 0
+Info 43   [0:3:12.49] getCompletionData: Get previous token 1: 0
+Info 44   [0:3:12.49] getCompletionData: Get previous token 2: 0
+Info 45   [0:3:12.50] getCompletionsAtPosition: isCompletionListBlocker: 1
+Info 46   [0:3:12.58] getCompletionData: Semantic work: 8
+Info 47   [0:3:12.70] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 12
+Info 48   [0:3:12.194] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 49   [0:3:12.208] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 8 structureChanged: false Elapsed: 14ms
+Info 50   [0:3:12.208] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 51   [0:3:12.209] getCompletionData: Get current token: 0
+Info 52   [0:3:12.209] getCompletionData: Is inside comment: 0
+Info 53   [0:3:12.209] getCompletionData: Get previous token 1: 0
+Info 54   [0:3:12.209] getCompletionData: Get previous token 2: 0
+Info 55   [0:3:12.209] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 56   [0:3:12.217] getCompletionData: Semantic work: 8
+Info 57   [0:3:12.233] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 16
+Info 58   [0:3:12.757] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 59   [0:3:12.771] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 9 structureChanged: false Elapsed: 14ms
+Info 60   [0:3:12.771] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 61   [0:3:12.771] getCompletionData: Get current token: 0
+Info 62   [0:3:12.772] getCompletionData: Is inside comment: 1
+Info 63   [0:3:12.772] getCompletionData: Get previous token 1: 0
+Info 64   [0:3:12.772] getCompletionData: Get previous token 2: 0
+Info 65   [0:3:12.772] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 66   [0:3:12.778] getCompletionData: Semantic work: 6
+Info 67   [0:3:12.790] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 12
+Info 68   [0:3:13.22] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 69   [0:3:13.32] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 10 structureChanged: false Elapsed: 10ms
+Info 70   [0:3:13.32] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 71   [0:3:13.33] getCompletionData: Get current token: 0
+Info 72   [0:3:13.33] getCompletionData: Is inside comment: 0
+Info 73   [0:3:13.33] getCompletionData: Get previous token 1: 0
+Info 74   [0:3:13.33] getCompletionData: Get previous token 2: 0
+Info 75   [0:3:13.33] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 76   [0:3:13.43] getCompletionData: Semantic work: 10
+Info 77   [0:3:13.53] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 10
+Info 78   [0:3:13.313] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 79   [0:3:13.329] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 11 structureChanged: false Elapsed: 16ms
+Info 80   [0:3:13.329] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 81   [0:3:13.330] getCompletionData: Get current token: 0
+Info 82   [0:3:13.330] getCompletionData: Is inside comment: 0
+Info 83   [0:3:13.330] getCompletionData: Get previous token 1: 0
+Info 84   [0:3:13.330] getCompletionData: Get previous token 2: 0
+Info 85   [0:3:13.330] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 86   [0:3:13.334] getCompletionData: Semantic work: 4
+Info 87   [0:3:13.339] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 5
+Info 88   [0:3:14.192] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 89   [0:3:14.206] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 12 structureChanged: false Elapsed: 14ms
+Info 90   [0:3:14.206] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 91   [0:3:14.207] getCompletionData: Get current token: 0
+Info 92   [0:3:14.207] getCompletionData: Is inside comment: 0
+Info 93   [0:3:14.207] getCompletionData: Get previous token 1: 0
+Info 94   [0:3:14.207] getCompletionData: Get previous token 2: 0
+Info 95   [0:3:14.207] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 96   [0:3:14.212] getCompletionData: Semantic work: 5
+Info 97   [0:3:14.215] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 3
+Info 98   [0:3:14.392] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 99   [0:3:14.407] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 13 structureChanged: false Elapsed: 15ms
+Info 100  [0:3:14.407] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 101  [0:3:14.409] getCompletionData: Get current token: 0
+Info 102  [0:3:14.409] getCompletionData: Is inside comment: 0
+Info 103  [0:3:14.409] getCompletionData: Get previous token 1: 0
+Info 104  [0:3:14.409] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 105  [0:3:14.411] getCompletionData: Semantic work: 2
+Info 106  [0:3:14.414] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 1
+Info 107  [0:3:15.155] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 108  [0:3:15.170] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 14 structureChanged: false Elapsed: 15ms
+Info 109  [0:3:15.170] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 110  [0:3:15.171] getCompletionData: Get current token: 0
+Info 111  [0:3:15.171] getCompletionData: Is inside comment: 0
+Info 112  [0:3:15.171] getCompletionData: Get previous token 1: 0
+Info 113  [0:3:15.171] getCompletionData: Get previous token 2: 0
+Info 114  [0:3:15.171] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 115  [0:3:15.172] getCompletionData: Semantic work: 1
+Info 116  [0:3:15.180] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 8
+Info 117  [0:3:16.16] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 118  [0:3:16.30] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 15 structureChanged: false Elapsed: 13ms
+Info 119  [0:3:16.30] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 120  [0:3:16.31] getCompletionData: Get current token: 0
+Info 121  [0:3:16.31] getCompletionData: Is inside comment: 0
+Info 122  [0:3:16.31] getCompletionData: Get previous token 1: 0
+Info 123  [0:3:16.31] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 124  [0:3:16.32] getCompletionData: Semantic work: 1
+Info 125  [0:3:16.33] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 1
+Info 126  [0:3:16.747] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 127  [0:3:16.759] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 16 structureChanged: false Elapsed: 12ms
+Info 128  [0:3:16.759] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 129  [0:3:17.637] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 130  [0:3:17.655] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 17 structureChanged: false Elapsed: 18ms
+Info 131  [0:3:17.655] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 132  [0:3:17.795] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 133  [0:3:17.807] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 18 structureChanged: false Elapsed: 12ms
+Info 134  [0:3:17.807] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 135  [0:3:18.373] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 136  [0:3:18.389] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 19 structureChanged: false Elapsed: 16ms
+Info 137  [0:3:18.390] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 138  [0:3:20.505] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 139  [0:3:20.524] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 20 structureChanged: false Elapsed: 19ms
+Info 140  [0:3:20.524] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 141  [0:3:21.156] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 142  [0:3:21.168] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 21 structureChanged: false Elapsed: 12ms
+Info 143  [0:3:21.169] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 144  [0:3:23.173] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 145  [0:3:23.189] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 22 structureChanged: false Elapsed: 16ms
+Info 146  [0:3:23.189] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 147  [0:3:23.633] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 148  [0:3:23.640] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 23 structureChanged: false Elapsed: 7ms
+Info 149  [0:3:23.640] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 150  [0:3:24.428] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 151  [0:3:24.448] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 24 structureChanged: false Elapsed: 20ms
+Info 152  [0:3:24.448] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 153  [0:3:26.399] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 154  [0:3:26.414] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 25 structureChanged: false Elapsed: 15ms
+Info 155  [0:3:26.414] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 156  [0:3:26.895] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 157  [0:3:26.907] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 26 structureChanged: false Elapsed: 12ms
+Info 158  [0:3:26.907] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 159  [0:3:27.641] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 160  [0:3:27.654] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 27 structureChanged: false Elapsed: 13ms
+Info 161  [0:3:27.654] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 162  [0:3:27.833] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 163  [0:3:27.853] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 28 structureChanged: false Elapsed: 20ms
+Info 164  [0:3:27.853] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 165  [0:3:27.855] getCompletionData: Get current token: 0
+Info 166  [0:3:27.855] getCompletionData: Is inside comment: 0
+Info 167  [0:3:27.855] getCompletionData: Get previous token 1: 0
+Info 168  [0:3:27.855] getCompletionData: Get previous token 2: 0
+Info 169  [0:3:27.856] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 170  [0:3:27.863] getCompletionData: Semantic work: 7
+Info 171  [0:3:27.871] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 7
+Info 172  [0:3:27.998] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 173  [0:3:28.6] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 29 structureChanged: false Elapsed: 8ms
+Info 174  [0:3:28.6] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 175  [0:3:28.6] getCompletionData: Get current token: 0
+Info 176  [0:3:28.6] getCompletionData: Is inside comment: 0
+Info 177  [0:3:28.6] getCompletionData: Get previous token 1: 0
+Info 178  [0:3:28.6] getCompletionData: Get previous token 2: 0
+Info 179  [0:3:28.6] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 180  [0:3:28.13] getCompletionData: Semantic work: 7
+Info 181  [0:3:28.28] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 14
+Info 182  [0:3:28.255] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 183  [0:3:28.262] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 30 structureChanged: false Elapsed: 7ms
+Info 184  [0:3:28.262] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 185  [0:3:28.263] getCompletionData: Get current token: 0
+Info 186  [0:3:28.263] getCompletionData: Is inside comment: 0
+Info 187  [0:3:28.263] getCompletionData: Get previous token 1: 0
+Info 188  [0:3:28.263] getCompletionData: Get previous token 2: 0
+Info 189  [0:3:28.263] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 190  [0:3:28.267] getCompletionData: Semantic work: 4
+Info 191  [0:3:28.277] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 8
+Info 192  [0:3:28.335] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 193  [0:3:28.342] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 31 structureChanged: false Elapsed: 7ms
+Info 194  [0:3:28.342] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 195  [0:3:28.343] getCompletionData: Get current token: 0
+Info 196  [0:3:28.343] getCompletionData: Is inside comment: 0
+Info 197  [0:3:28.344] getCompletionData: Get previous token 1: 1
+Info 198  [0:3:28.344] getCompletionData: Get previous token 2: 0
+Info 199  [0:3:28.344] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 200  [0:3:28.349] getCompletionData: Semantic work: 5
+Info 201  [0:3:28.352] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 3
+Info 202  [0:3:28.610] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 203  [0:3:28.627] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 32 structureChanged: false Elapsed: 17ms
+Info 204  [0:3:28.627] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 205  [0:3:28.628] getCompletionData: Get current token: 0
+Info 206  [0:3:28.628] getCompletionData: Is inside comment: 0
+Info 207  [0:3:28.628] getCompletionData: Get previous token 1: 0
+Info 208  [0:3:28.628] getCompletionData: Get previous token 2: 0
+Info 209  [0:3:28.628] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 210  [0:3:28.632] getCompletionData: Semantic work: 4
+Info 211  [0:3:28.636] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 4
+Info 212  [0:3:28.772] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 213  [0:3:28.779] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 33 structureChanged: false Elapsed: 7ms
+Info 214  [0:3:28.779] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 215  [0:3:28.779] getCompletionData: Get current token: 0
+Info 216  [0:3:28.780] getCompletionData: Is inside comment: 0
+Info 217  [0:3:28.780] getCompletionData: Get previous token 1: 0
+Info 218  [0:3:28.780] getCompletionData: Get previous token 2: 0
+Info 219  [0:3:28.780] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 220  [0:3:28.784] getCompletionData: Semantic work: 4
+Info 221  [0:3:28.788] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 4
+Info 222  [0:3:28.957] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 223  [0:3:28.966] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 34 structureChanged: false Elapsed: 9ms
+Info 224  [0:3:28.966] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 225  [0:3:28.967] getCompletionData: Get current token: 0
+Info 226  [0:3:28.968] getCompletionData: Is inside comment: 1
+Info 227  [0:3:28.968] getCompletionData: Get previous token 1: 0
+Info 228  [0:3:28.968] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 229  [0:3:28.969] getCompletionData: Semantic work: 1
+Info 230  [0:3:28.970] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 0
+Info 231  [0:3:29.828] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 232  [0:3:29.842] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 35 structureChanged: false Elapsed: 14ms
+Info 233  [0:3:29.842] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 234  [0:3:29.843] getCompletionData: Get current token: 0
+Info 235  [0:3:29.843] getCompletionData: Is inside comment: 0
+Info 236  [0:3:29.843] getCompletionData: Get previous token 1: 0
+Info 237  [0:3:29.843] getCompletionData: Get previous token 2: 0
+Info 238  [0:3:29.843] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 239  [0:3:29.844] getCompletionData: Semantic work: 1
+Info 240  [0:3:29.848] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 4
+Info 241  [0:3:30.73] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 242  [0:3:30.81] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 36 structureChanged: false Elapsed: 8ms
+Info 243  [0:3:30.81] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 244  [0:3:30.82] getCompletionData: Get current token: 0
+Info 245  [0:3:30.82] getCompletionData: Is inside comment: 0
+Info 246  [0:3:30.82] getCompletionData: Get previous token 1: 0
+Info 247  [0:3:30.82] getCompletionData: Get previous token 2: 0
+Info 248  [0:3:30.82] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 249  [0:3:30.83] getCompletionData: Semantic work: 1
+Info 250  [0:3:30.86] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 3
+Info 251  [0:3:30.159] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 252  [0:3:30.173] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 37 structureChanged: false Elapsed: 14ms
+Info 253  [0:3:30.173] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 254  [0:3:30.174] getCompletionData: Get current token: 0
+Info 255  [0:3:30.174] getCompletionData: Is inside comment: 0
+Info 256  [0:3:30.174] getCompletionData: Get previous token 1: 0
+Info 257  [0:3:30.174] getCompletionData: Get previous token 2: 0
+Info 258  [0:3:30.174] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 259  [0:3:30.175] getCompletionData: Semantic work: 1
+Info 260  [0:3:30.176] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 1
+Info 261  [0:3:30.632] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 262  [0:3:30.646] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 38 structureChanged: false Elapsed: 14ms
+Info 263  [0:3:30.647] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 264  [0:3:30.852] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 265  [0:3:30.866] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 39 structureChanged: false Elapsed: 14ms
+Info 266  [0:3:30.866] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 267  [0:3:31.365] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 268  [0:3:31.372] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 40 structureChanged: false Elapsed: 7ms
+Info 269  [0:3:31.372] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 270  [0:3:31.650] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 271  [0:3:31.657] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 41 structureChanged: false Elapsed: 7ms
+Info 272  [0:3:31.657] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 273  [0:3:32.331] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 274  [0:3:32.346] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 42 structureChanged: false Elapsed: 15ms
+Info 275  [0:3:32.346] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 276  [0:3:32.478] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 277  [0:3:32.485] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 43 structureChanged: false Elapsed: 7ms
+Info 278  [0:3:32.485] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 279  [0:3:32.822] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 280  [0:3:32.829] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 44 structureChanged: false Elapsed: 7ms
+Info 281  [0:3:32.829] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 282  [0:3:33.590] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 283  [0:3:33.602] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 45 structureChanged: false Elapsed: 12ms
+Info 284  [0:3:33.602] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 285  [0:3:34.106] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 286  [0:3:34.118] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 46 structureChanged: false Elapsed: 12ms
+Info 287  [0:3:34.118] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 288  [0:3:34.783] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 289  [0:3:34.791] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 47 structureChanged: false Elapsed: 7ms
+Info 290  [0:3:34.791] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 291  [0:3:35.26] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 292  [0:3:35.35] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 48 structureChanged: false Elapsed: 9ms
+Info 293  [0:3:35.35] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 294  [0:3:35.382] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 295  [0:3:35.394] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 49 structureChanged: false Elapsed: 12ms
+Info 296  [0:3:35.394] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 297  [0:3:35.657] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 298  [0:3:35.676] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 50 structureChanged: false Elapsed: 18ms
+Info 299  [0:3:35.676] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 300  [0:3:36.24] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 301  [0:3:36.30] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 51 structureChanged: false Elapsed: 6ms
+Info 302  [0:3:36.30] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 303  [0:3:36.401] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 304  [0:3:36.408] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 52 structureChanged: false Elapsed: 7ms
+Info 305  [0:3:36.408] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 306  [0:3:40.935] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 307  [0:3:40.945] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 53 structureChanged: false Elapsed: 10ms
+Info 308  [0:3:40.945] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 309  [0:3:44.229] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 310  [0:3:44.240] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 54 structureChanged: false Elapsed: 11ms
+Info 311  [0:3:44.240] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 312  [0:3:44.541] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 313  [0:3:44.552] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 55 structureChanged: false Elapsed: 11ms
+Info 314  [0:3:44.552] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 315  [0:3:45.203] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 316  [0:3:45.212] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 56 structureChanged: false Elapsed: 9ms
+Info 317  [0:3:45.212] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 318  [0:3:45.213] getCompletionData: Get current token: 0
+Info 319  [0:3:45.213] getCompletionData: Is inside comment: 0
+Info 320  [0:3:45.213] getCompletionData: Get previous token 1: 0
+Info 321  [0:3:45.213] getCompletionData: Get previous token 2: 0
+Info 322  [0:3:45.214] getCompletionsAtPosition: isCompletionListBlocker: 1
+Info 323  [0:3:45.223] getCompletionData: Semantic work: 9
+Info 324  [0:3:45.232] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 9
+Info 325  [0:3:45.468] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 326  [0:3:45.478] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 57 structureChanged: false Elapsed: 9ms
+Info 327  [0:3:45.479] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 328  [0:3:45.480] getCompletionData: Get current token: 0
+Info 329  [0:3:45.480] getCompletionData: Is inside comment: 0
+Info 330  [0:3:45.480] getCompletionData: Get previous token 1: 0
+Info 331  [0:3:45.480] getCompletionData: Get previous token 2: 0
+Info 332  [0:3:45.480] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 333  [0:3:45.485] getCompletionData: Semantic work: 5
+Info 334  [0:3:45.489] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 4
+Info 335  [0:3:45.496] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 336  [0:3:45.510] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 58 structureChanged: false Elapsed: 14ms
+Info 337  [0:3:45.511] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 338  [0:3:45.511] getCompletionData: Get current token: 0
+Info 339  [0:3:45.511] getCompletionData: Is inside comment: 0
+Info 340  [0:3:45.511] getCompletionData: Get previous token 1: 0
+Info 341  [0:3:45.511] getCompletionData: Get previous token 2: 0
+Info 342  [0:3:45.512] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 343  [0:3:45.517] getCompletionData: Semantic work: 5
+Info 344  [0:3:45.524] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 7
+Info 345  [0:3:46.467] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 346  [0:3:46.477] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 59 structureChanged: false Elapsed: 10ms
+Info 347  [0:3:46.478] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 348  [0:3:46.850] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 349  [0:3:46.860] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 60 structureChanged: false Elapsed: 10ms
+Info 350  [0:3:46.860] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 351  [0:3:47.780] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 352  [0:3:47.792] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 61 structureChanged: false Elapsed: 12ms
+Info 353  [0:3:47.793] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 354  [0:3:48.535] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 355  [0:3:48.552] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 62 structureChanged: false Elapsed: 17ms
+Info 356  [0:3:48.552] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 357  [0:4:20.239] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 358  [0:4:20.252] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 63 structureChanged: false Elapsed: 13ms
+Info 359  [0:4:20.252] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 360  [0:4:20.707] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 361  [0:4:20.715] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 64 structureChanged: false Elapsed: 7ms
+Info 362  [0:4:20.715] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 363  [0:5:14.6] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 364  [0:5:14.22] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 65 structureChanged: false Elapsed: 16ms
+Info 365  [0:5:14.22] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 366  [0:5:14.758] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 367  [0:5:14.766] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 66 structureChanged: false Elapsed: 8ms
+Info 368  [0:5:14.766] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 369  [0:5:14.767] getCompletionData: Get current token: 0
+Info 370  [0:5:14.767] getCompletionData: Is inside comment: 0
+Info 371  [0:5:14.767] getCompletionData: Get previous token 1: 0
+Info 372  [0:5:14.767] getCompletionData: Get previous token 2: 0
+Info 373  [0:5:14.768] getCompletionsAtPosition: isCompletionListBlocker: 1
+Info 374  [0:5:14.774] getCompletionData: Semantic work: 6
+Info 375  [0:5:14.780] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 5
+Info 376  [0:5:14.977] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 377  [0:5:14.989] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 67 structureChanged: false Elapsed: 12ms
+Info 378  [0:5:14.989] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 379  [0:5:14.994] getCompletionData: Get current token: 0
+Info 380  [0:5:14.994] getCompletionData: Is inside comment: 0
+Info 381  [0:5:14.994] getCompletionData: Get previous token 1: 0
+Info 382  [0:5:14.994] getCompletionData: Get previous token 2: 0
+Info 383  [0:5:14.995] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 384  [0:5:15.2] getCompletionData: Semantic work: 7
+Info 385  [0:5:15.8] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 6
+Info 386  [0:5:15.131] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 387  [0:5:15.141] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 68 structureChanged: false Elapsed: 10ms
+Info 388  [0:5:15.141] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 389  [0:5:15.141] getCompletionData: Get current token: 0
+Info 390  [0:5:15.141] getCompletionData: Is inside comment: 0
+Info 391  [0:5:15.141] getCompletionData: Get previous token 1: 0
+Info 392  [0:5:15.141] getCompletionData: Get previous token 2: 0
+Info 393  [0:5:15.141] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 394  [0:5:15.145] getCompletionData: Semantic work: 4
+Info 395  [0:5:15.149] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 4
+Info 396  [0:5:15.183] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 397  [0:5:15.192] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 69 structureChanged: false Elapsed: 9ms
+Info 398  [0:5:15.192] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 399  [0:5:15.193] getCompletionData: Get current token: 0
+Info 400  [0:5:15.193] getCompletionData: Is inside comment: 0
+Info 401  [0:5:15.193] getCompletionData: Get previous token 1: 0
+Info 402  [0:5:15.193] getCompletionData: Get previous token 2: 0
+Info 403  [0:5:15.193] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 404  [0:5:15.199] getCompletionData: Semantic work: 6
+Info 405  [0:5:15.202] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 3
+Info 406  [0:5:15.424] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 407  [0:5:15.442] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 70 structureChanged: false Elapsed: 18ms
+Info 408  [0:5:15.442] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 409  [0:5:15.442] getCompletionData: Get current token: 0
+Info 410  [0:5:15.443] getCompletionData: Is inside comment: 0
+Info 411  [0:5:15.443] getCompletionData: Get previous token 1: 0
+Info 412  [0:5:15.443] getCompletionData: Get previous token 2: 0
+Info 413  [0:5:15.443] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 414  [0:5:15.450] getCompletionData: Semantic work: 7
+Info 415  [0:5:15.453] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 3
+Info 416  [0:5:15.584] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 417  [0:5:15.600] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 71 structureChanged: false Elapsed: 15ms
+Info 418  [0:5:15.600] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 419  [0:5:15.601] getCompletionData: Get current token: 0
+Info 420  [0:5:15.601] getCompletionData: Is inside comment: 0
+Info 421  [0:5:15.601] getCompletionData: Get previous token 1: 0
+Info 422  [0:5:15.602] getCompletionData: Get previous token 2: 0
+Info 423  [0:5:15.602] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 424  [0:5:15.607] getCompletionData: Semantic work: 5
+Info 425  [0:5:15.610] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 3
+Info 426  [0:5:15.695] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 427  [0:5:15.708] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 72 structureChanged: false Elapsed: 13ms
+Info 428  [0:5:15.708] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 429  [0:5:15.709] getCompletionData: Get current token: 0
+Info 430  [0:5:15.709] getCompletionData: Is inside comment: 0
+Info 431  [0:5:15.709] getCompletionData: Get previous token 1: 0
+Info 432  [0:5:15.709] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 433  [0:5:15.710] getCompletionData: Semantic work: 1
+Info 434  [0:5:15.711] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 1
+Info 435  [0:5:15.961] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 436  [0:5:15.971] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 73 structureChanged: false Elapsed: 10ms
+Info 437  [0:5:15.971] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 438  [0:5:15.977] getCompletionData: Get current token: 0
+Info 439  [0:5:15.977] getCompletionData: Is inside comment: 0
+Info 440  [0:5:15.977] getCompletionData: Get previous token 1: 0
+Info 441  [0:5:15.977] getCompletionData: Get previous token 2: 0
+Info 442  [0:5:15.977] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 443  [0:5:15.978] getCompletionData: Semantic work: 1
+Info 444  [0:5:15.985] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 6
+Info 445  [0:5:16.126] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 446  [0:5:16.136] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 74 structureChanged: false Elapsed: 9ms
+Info 447  [0:5:16.137] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 448  [0:5:16.137] getCompletionData: Get current token: 0
+Info 449  [0:5:16.137] getCompletionData: Is inside comment: 0
+Info 450  [0:5:16.137] getCompletionData: Get previous token 1: 0
+Info 451  [0:5:16.137] getCompletionData: Get previous token 2: 0
+Info 452  [0:5:16.137] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 453  [0:5:16.138] getCompletionData: Semantic work: 1
+Info 454  [0:5:16.143] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 5
+Info 455  [0:5:16.209] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 456  [0:5:16.224] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 75 structureChanged: false Elapsed: 15ms
+Info 457  [0:5:16.224] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 458  [0:5:16.225] getCompletionData: Get current token: 0
+Info 459  [0:5:16.225] getCompletionData: Is inside comment: 0
+Info 460  [0:5:16.225] getCompletionData: Get previous token 1: 0
+Info 461  [0:5:16.225] getCompletionData: Get previous token 2: 0
+Info 462  [0:5:16.225] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 463  [0:5:16.225] getCompletionData: Semantic work: 0
+Info 464  [0:5:16.228] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 3
+Info 465  [0:5:16.787] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 466  [0:5:16.795] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 76 structureChanged: false Elapsed: 8ms
+Info 467  [0:5:16.795] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 468  [0:5:17.523] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 469  [0:5:17.532] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 77 structureChanged: false Elapsed: 9ms
+Info 470  [0:5:17.532] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 471  [0:5:19.130] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 472  [0:5:19.143] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 78 structureChanged: false Elapsed: 13ms
+Info 473  [0:5:19.143] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 474  [0:5:19.360] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 475  [0:5:19.368] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 79 structureChanged: false Elapsed: 8ms
+Info 476  [0:5:19.368] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 477  [0:5:19.700] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 478  [0:5:19.715] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 80 structureChanged: false Elapsed: 15ms
+Info 479  [0:5:19.715] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 480  [0:5:19.823] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 481  [0:5:19.831] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 81 structureChanged: false Elapsed: 8ms
+Info 482  [0:5:19.831] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 483  [0:5:19.983] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 484  [0:5:19.990] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 82 structureChanged: false Elapsed: 7ms
+Info 485  [0:5:19.990] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 486  [0:5:20.273] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 487  [0:5:20.281] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 83 structureChanged: false Elapsed: 8ms
+Info 488  [0:5:20.281] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 489  [0:5:20.348] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 490  [0:5:20.356] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 84 structureChanged: false Elapsed: 8ms
+Info 491  [0:5:20.356] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 492  [0:5:20.433] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 493  [0:5:20.449] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 85 structureChanged: false Elapsed: 16ms
+Info 494  [0:5:20.449] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 495  [0:5:20.882] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 496  [0:5:20.891] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 86 structureChanged: false Elapsed: 9ms
+Info 497  [0:5:20.891] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 498  [0:5:21.170] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 499  [0:5:21.184] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 87 structureChanged: false Elapsed: 14ms
+Info 500  [0:5:21.184] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 501  [0:5:21.257] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 502  [0:5:21.269] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 88 structureChanged: false Elapsed: 12ms
+Info 503  [0:5:21.269] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 504  [0:5:21.423] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 505  [0:5:21.456] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 89 structureChanged: false Elapsed: 33ms
+Info 506  [0:5:21.456] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 507  [0:5:22.55] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 508  [0:5:22.62] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 90 structureChanged: false Elapsed: 7ms
+Info 509  [0:5:22.62] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 510  [0:5:22.65] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 511  [0:5:22.72] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 91 structureChanged: false Elapsed: 6ms
+Info 512  [0:5:22.72] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 513  [0:5:22.160] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 514  [0:5:22.167] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 92 structureChanged: false Elapsed: 7ms
+Info 515  [0:5:22.167] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 516  [0:5:22.266] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 517  [0:5:22.274] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 93 structureChanged: false Elapsed: 8ms
+Info 518  [0:5:22.274] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 519  [0:5:22.396] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 520  [0:5:22.413] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 94 structureChanged: false Elapsed: 17ms
+Info 521  [0:5:22.413] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 522  [0:5:22.579] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 523  [0:5:22.584] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 95 structureChanged: false Elapsed: 5ms
+Info 524  [0:5:22.584] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 525  [0:5:23.270] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 526  [0:5:23.279] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 96 structureChanged: false Elapsed: 9ms
+Info 527  [0:5:23.279] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 528  [0:5:23.280] getCompletionData: Get current token: 0
+Info 529  [0:5:23.280] getCompletionData: Is inside comment: 0
+Info 530  [0:5:23.280] getCompletionData: Get previous token 1: 0
+Info 531  [0:5:23.280] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 532  [0:5:23.285] getCompletionData: Semantic work: 5
+Info 533  [0:5:23.290] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 4
+Info 534  [0:5:24.566] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 535  [0:5:24.582] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 97 structureChanged: false Elapsed: 16ms
+Info 536  [0:5:24.582] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 537  [0:5:26.719] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 538  [0:5:26.732] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 98 structureChanged: false Elapsed: 13ms
+Info 539  [0:5:26.732] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 540  [0:5:29.182] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 541  [0:5:29.192] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 99 structureChanged: false Elapsed: 10ms
+Info 542  [0:5:29.193] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 543  [0:5:29.793] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 544  [0:5:29.804] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 100 structureChanged: false Elapsed: 11ms
+Info 545  [0:5:29.804] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 546  [0:5:31.357] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 547  [0:5:31.371] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 101 structureChanged: false Elapsed: 14ms
+Info 548  [0:5:31.371] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 549  [0:5:32.550] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 550  [0:5:32.562] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 102 structureChanged: false Elapsed: 12ms
+Info 551  [0:5:32.562] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 552  [0:5:33.223] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 553  [0:5:33.231] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 103 structureChanged: false Elapsed: 8ms
+Info 554  [0:5:33.231] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 555  [0:5:33.231] getCompletionData: Get current token: 0
+Info 556  [0:5:33.231] getCompletionData: Is inside comment: 0
+Info 557  [0:5:33.231] getCompletionData: Get previous token 1: 0
+Info 558  [0:5:33.231] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 559  [0:5:33.231] Returning an empty list because completion was requested in an invalid position.
+Info 560  [0:5:33.374] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 561  [0:5:33.380] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 104 structureChanged: false Elapsed: 6ms
+Info 562  [0:5:33.380] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 563  [0:5:33.381] getCompletionData: Get current token: 0
+Info 564  [0:5:33.381] getCompletionData: Is inside comment: 0
+Info 565  [0:5:33.381] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 566  [0:5:34.401] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 567  [0:5:34.411] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 105 structureChanged: false Elapsed: 10ms
+Info 568  [0:5:34.411] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 569  [0:5:34.772] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 570  [0:5:34.780] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 106 structureChanged: false Elapsed: 7ms
+Info 571  [0:5:34.780] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 572  [0:5:34.780] getCompletionData: Get current token: 0
+Info 573  [0:5:34.780] getCompletionData: Is inside comment: 0
+Info 574  [0:5:34.781] getCompletionData: Get previous token 1: 1
+Info 575  [0:5:34.781] getCompletionData: Get previous token 2: 0
+Info 576  [0:5:34.781] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 577  [0:5:34.792] getCompletionData: Semantic work: 11
+Info 578  [0:5:34.817] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 22
+Info 579  [0:5:34.912] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 580  [0:5:34.920] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 107 structureChanged: false Elapsed: 8ms
+Info 581  [0:5:34.920] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 582  [0:5:34.920] getCompletionData: Get current token: 0
+Info 583  [0:5:34.920] getCompletionData: Is inside comment: 0
+Info 584  [0:5:34.920] getCompletionData: Get previous token 1: 0
+Info 585  [0:5:34.920] getCompletionData: Get previous token 2: 0
+Info 586  [0:5:34.920] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 587  [0:5:34.925] getCompletionData: Semantic work: 5
+Info 588  [0:5:34.948] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 6
+Info 589  [0:5:35.21] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 590  [0:5:35.32] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 108 structureChanged: false Elapsed: 11ms
+Info 591  [0:5:35.32] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 592  [0:5:35.33] getCompletionData: Get current token: 0
+Info 593  [0:5:35.33] getCompletionData: Is inside comment: 0
+Info 594  [0:5:35.33] getCompletionData: Get previous token 1: 0
+Info 595  [0:5:35.33] getCompletionData: Get previous token 2: 0
+Info 596  [0:5:35.33] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 597  [0:5:35.37] getCompletionData: Semantic work: 4
+Info 598  [0:5:35.42] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 4
+Info 599  [0:5:35.125] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 600  [0:5:35.132] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 109 structureChanged: false Elapsed: 6ms
+Info 601  [0:5:35.132] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 602  [0:5:35.132] getCompletionData: Get current token: 0
+Info 603  [0:5:35.132] getCompletionData: Is inside comment: 0
+Info 604  [0:5:35.132] getCompletionData: Get previous token 1: 0
+Info 605  [0:5:35.132] getCompletionData: Get previous token 2: 0
+Info 606  [0:5:35.132] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 607  [0:5:35.139] getCompletionData: Semantic work: 7
+Info 608  [0:5:35.156] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 17
+Info 609  [0:5:35.351] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 610  [0:5:35.358] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 110 structureChanged: false Elapsed: 6ms
+Info 611  [0:5:35.358] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 612  [0:5:35.358] getCompletionData: Get current token: 0
+Info 613  [0:5:35.358] getCompletionData: Is inside comment: 0
+Info 614  [0:5:35.358] getCompletionData: Get previous token 1: 0
+Info 615  [0:5:35.358] getCompletionData: Get previous token 2: 0
+Info 616  [0:5:35.358] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 617  [0:5:35.363] getCompletionData: Semantic work: 5
+Info 618  [0:5:35.366] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 3
+Info 619  [0:5:35.397] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 620  [0:5:35.405] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 111 structureChanged: false Elapsed: 8ms
+Info 621  [0:5:35.405] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 622  [0:5:35.405] getCompletionData: Get current token: 0
+Info 623  [0:5:35.405] getCompletionData: Is inside comment: 0
+Info 624  [0:5:35.405] getCompletionData: Get previous token 1: 0
+Info 625  [0:5:35.405] getCompletionData: Get previous token 2: 0
+Info 626  [0:5:35.405] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 627  [0:5:35.408] getCompletionData: Semantic work: 3
+Info 628  [0:5:35.412] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 4
+Info 629  [0:5:35.508] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 630  [0:5:35.515] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 112 structureChanged: false Elapsed: 7ms
+Info 631  [0:5:35.515] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 632  [0:5:35.516] getCompletionData: Get current token: 0
+Info 633  [0:5:35.516] getCompletionData: Is inside comment: 0
+Info 634  [0:5:35.516] getCompletionData: Get previous token 1: 0
+Info 635  [0:5:35.516] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 636  [0:5:35.517] getCompletionData: Semantic work: 1
+Info 637  [0:5:35.517] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 0
+Info 638  [0:5:35.682] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 639  [0:5:35.701] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 113 structureChanged: false Elapsed: 19ms
+Info 640  [0:5:35.701] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 641  [0:5:35.702] getCompletionData: Get current token: 0
+Info 642  [0:5:35.702] getCompletionData: Is inside comment: 0
+Info 643  [0:5:35.702] getCompletionData: Get previous token 1: 0
+Info 644  [0:5:35.702] getCompletionData: Get previous token 2: 0
+Info 645  [0:5:35.702] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 646  [0:5:35.702] getCompletionData: Semantic work: 0
+Info 647  [0:5:35.707] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 5
+Info 648  [0:5:35.867] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 649  [0:5:35.881] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 114 structureChanged: false Elapsed: 14ms
+Info 650  [0:5:35.881] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 651  [0:5:35.882] getCompletionData: Get current token: 0
+Info 652  [0:5:35.882] getCompletionData: Is inside comment: 0
+Info 653  [0:5:35.882] getCompletionData: Get previous token 1: 0
+Info 654  [0:5:35.882] getCompletionData: Get previous token 2: 0
+Info 655  [0:5:35.882] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 656  [0:5:35.882] getCompletionData: Semantic work: 0
+Info 657  [0:5:35.885] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 3
+Info 658  [0:5:35.978] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 659  [0:5:35.994] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 115 structureChanged: false Elapsed: 16ms
+Info 660  [0:5:35.995] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 661  [0:5:35.996] getCompletionData: Get current token: 0
+Info 662  [0:5:35.997] getCompletionData: Is inside comment: 0
+Info 663  [0:5:35.997] getCompletionData: Get previous token 1: 0
+Info 664  [0:5:35.997] getCompletionData: Get previous token 2: 0
+Info 665  [0:5:35.997] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 666  [0:5:35.998] getCompletionData: Semantic work: 1
+Info 667  [0:5:35.998] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 0
+Info 668  [0:5:36.458] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 669  [0:5:36.465] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 116 structureChanged: false Elapsed: 7ms
+Info 670  [0:5:36.465] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 671  [0:5:36.586] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 672  [0:5:36.593] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 117 structureChanged: false Elapsed: 7ms
+Info 673  [0:5:36.593] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 674  [0:5:36.950] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 675  [0:5:36.959] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 118 structureChanged: false Elapsed: 9ms
+Info 676  [0:5:36.959] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 677  [0:5:37.395] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 678  [0:5:37.401] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 119 structureChanged: false Elapsed: 5ms
+Info 679  [0:5:37.402] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 680  [0:5:37.516] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 681  [0:5:37.522] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 120 structureChanged: false Elapsed: 6ms
+Info 682  [0:5:37.522] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 683  [0:5:37.753] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 684  [0:5:37.761] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 121 structureChanged: false Elapsed: 8ms
+Info 685  [0:5:37.761] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 686  [0:5:37.902] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 687  [0:5:37.908] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 122 structureChanged: false Elapsed: 6ms
+Info 688  [0:5:37.908] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 689  [0:5:38.210] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 690  [0:5:38.217] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 123 structureChanged: false Elapsed: 7ms
+Info 691  [0:5:38.217] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 692  [0:5:38.288] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 693  [0:5:38.309] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 124 structureChanged: false Elapsed: 21ms
+Info 694  [0:5:38.309] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 695  [0:5:38.436] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 696  [0:5:38.441] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 125 structureChanged: false Elapsed: 5ms
+Info 697  [0:5:38.441] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 698  [0:5:39.290] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 699  [0:5:39.296] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 126 structureChanged: false Elapsed: 6ms
+Info 700  [0:5:39.296] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 701  [0:5:39.450] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 702  [0:5:39.465] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 127 structureChanged: false Elapsed: 15ms
+Info 703  [0:5:39.465] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 704  [0:5:40.34] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 705  [0:5:40.40] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 128 structureChanged: false Elapsed: 6ms
+Info 706  [0:5:40.40] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 707  [0:5:40.368] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 708  [0:5:40.375] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 129 structureChanged: false Elapsed: 6ms
+Info 709  [0:5:40.375] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 710  [0:5:40.375] getCompletionData: Get current token: 0
+Info 711  [0:5:40.375] getCompletionData: Is inside comment: 0
+Info 712  [0:5:40.375] getCompletionData: Get previous token 1: 0
+Info 713  [0:5:40.375] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 714  [0:5:40.384] getCompletionData: Semantic work: 8
+Info 715  [0:5:40.393] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 5
+Info 716  [0:5:40.908] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 717  [0:5:40.922] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 130 structureChanged: false Elapsed: 14ms
+Info 718  [0:5:40.922] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 719  [0:5:42.0] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 720  [0:5:42.10] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 131 structureChanged: false Elapsed: 10ms
+Info 721  [0:5:42.10] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 722  [0:5:42.358] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 723  [0:5:42.365] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 132 structureChanged: false Elapsed: 7ms
+Info 724  [0:5:42.365] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 725  [0:5:51.890] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 726  [0:5:51.907] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 133 structureChanged: false Elapsed: 16ms
+Info 727  [0:5:51.907] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 728  [0:6:15.73] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 729  [0:6:15.88] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 134 structureChanged: false Elapsed: 14ms
+Info 730  [0:6:15.88] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 731  [0:6:20.124] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 732  [0:6:20.137] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 135 structureChanged: false Elapsed: 13ms
+Info 733  [0:6:20.137] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 734  [0:6:20.864] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 735  [0:6:20.885] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 136 structureChanged: false Elapsed: 20ms
+Info 736  [0:6:20.885] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 737  [0:6:22.500] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 738  [0:6:22.514] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 137 structureChanged: false Elapsed: 14ms
+Info 739  [0:6:22.514] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 740  [0:6:23.319] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 741  [0:6:23.333] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 138 structureChanged: false Elapsed: 14ms
+Info 742  [0:6:23.333] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 743  [0:6:23.334] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 744  [0:6:23.340] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 139 structureChanged: false Elapsed: 6ms
+Info 745  [0:6:23.340] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 746  [0:6:24.27] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 747  [0:6:24.40] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 140 structureChanged: false Elapsed: 13ms
+Info 748  [0:6:24.40] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 749  [0:6:24.449] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 750  [0:6:24.457] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 141 structureChanged: false Elapsed: 8ms
+Info 751  [0:6:24.457] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 752  [0:6:24.895] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 753  [0:6:24.907] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 142 structureChanged: false Elapsed: 12ms
+Info 754  [0:6:24.907] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 755  [0:6:26.900] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 756  [0:6:26.914] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 143 structureChanged: false Elapsed: 14ms
+Info 757  [0:6:26.914] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 758  [0:6:27.197] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 759  [0:6:27.213] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 144 structureChanged: false Elapsed: 16ms
+Info 760  [0:6:27.213] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 761  [0:6:27.216] getCompletionData: Get current token: 0
+Info 762  [0:6:27.216] getCompletionData: Is inside comment: 0
+Info 763  [0:6:27.216] getCompletionData: Get previous token 1: 0
+Info 764  [0:6:27.216] getCompletionData: Get previous token 2: 0
+Info 765  [0:6:27.216] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 766  [0:6:27.226] getCompletionData: Semantic work: 10
+Info 767  [0:6:27.236] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 8
+Info 768  [0:6:27.432] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 769  [0:6:27.438] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 145 structureChanged: false Elapsed: 6ms
+Info 770  [0:6:27.438] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 771  [0:6:27.439] getCompletionData: Get current token: 0
+Info 772  [0:6:27.439] getCompletionData: Is inside comment: 0
+Info 773  [0:6:27.439] getCompletionData: Get previous token 1: 0
+Info 774  [0:6:27.439] getCompletionData: Get previous token 2: 0
+Info 775  [0:6:27.439] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 776  [0:6:27.450] getCompletionData: Semantic work: 11
+Info 777  [0:6:27.458] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 6
+Info 778  [0:6:27.696] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 779  [0:6:27.702] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 146 structureChanged: false Elapsed: 6ms
+Info 780  [0:6:27.702] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 781  [0:6:27.704] getCompletionData: Get current token: 0
+Info 782  [0:6:27.704] getCompletionData: Is inside comment: 0
+Info 783  [0:6:27.704] getCompletionData: Get previous token 1: 0
+Info 784  [0:6:27.704] getCompletionData: Get previous token 2: 0
+Info 785  [0:6:27.705] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 786  [0:6:27.708] getCompletionData: Semantic work: 3
+Info 787  [0:6:27.726] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 12
+Info 788  [0:6:28.116] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 789  [0:6:28.125] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 147 structureChanged: false Elapsed: 9ms
+Info 790  [0:6:28.125] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 791  [0:6:28.125] getCompletionData: Get current token: 0
+Info 792  [0:6:28.125] getCompletionData: Is inside comment: 0
+Info 793  [0:6:28.127] getCompletionData: Get previous token 1: 2
+Info 794  [0:6:28.127] getCompletionData: Get previous token 2: 0
+Info 795  [0:6:28.127] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 796  [0:6:28.133] getCompletionData: Semantic work: 6
+Info 797  [0:6:28.140] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 7
+Info 798  [0:6:28.293] getCompletionData: Get current token: 0
+Info 799  [0:6:28.293] getCompletionData: Is inside comment: 0
+Info 800  [0:6:28.293] getCompletionData: Get previous token 1: 0
+Info 801  [0:6:28.293] getCompletionData: Get previous token 2: 0
+Info 802  [0:6:28.293] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 803  [0:6:28.297] getCompletionData: Semantic work: 4
+Info 804  [0:6:28.301] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 3
+Info 805  [0:6:28.321] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 806  [0:6:28.333] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 148 structureChanged: false Elapsed: 12ms
+Info 807  [0:6:28.334] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 808  [0:6:28.334] getCompletionData: Get current token: 0
+Info 809  [0:6:28.334] getCompletionData: Is inside comment: 0
+Info 810  [0:6:28.334] getCompletionData: Get previous token 1: 0
+Info 811  [0:6:28.334] getCompletionData: Get previous token 2: 0
+Info 812  [0:6:28.334] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 813  [0:6:28.341] getCompletionData: Semantic work: 7
+Info 814  [0:6:28.346] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 4
+Info 815  [0:6:28.437] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 816  [0:6:28.444] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 149 structureChanged: false Elapsed: 7ms
+Info 817  [0:6:28.444] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 818  [0:6:28.445] getCompletionData: Get current token: 0
+Info 819  [0:6:28.445] getCompletionData: Is inside comment: 0
+Info 820  [0:6:28.445] getCompletionData: Get previous token 1: 0
+Info 821  [0:6:28.445] getCompletionData: Get previous token 2: 0
+Info 822  [0:6:28.446] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 823  [0:6:28.451] getCompletionData: Semantic work: 5
+Info 824  [0:6:28.457] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 4
+Info 825  [0:6:30.976] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 826  [0:6:30.988] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 150 structureChanged: false Elapsed: 12ms
+Info 827  [0:6:30.988] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 828  [0:6:32.882] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 829  [0:6:32.894] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 151 structureChanged: false Elapsed: 12ms
+Info 830  [0:6:32.894] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 831  [0:6:33.142] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 832  [0:6:33.149] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 152 structureChanged: false Elapsed: 7ms
+Info 833  [0:6:33.149] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 834  [0:6:33.657] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 835  [0:6:33.672] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 153 structureChanged: false Elapsed: 15ms
+Info 836  [0:6:33.672] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 837  [0:6:33.673] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 838  [0:6:33.681] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 154 structureChanged: false Elapsed: 8ms
+Info 839  [0:6:33.681] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 840  [0:6:33.683] getCompletionData: Get current token: 0
+Info 841  [0:6:33.683] getCompletionData: Is inside comment: 0
+Info 842  [0:6:33.683] getCompletionData: Get previous token 1: 0
+Info 843  [0:6:33.683] getCompletionData: Get previous token 2: 0
+Info 844  [0:6:33.683] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 845  [0:6:33.687] getCompletionData: Semantic work: 4
+Info 846  [0:6:33.687] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 0
+Info 847  [0:6:33.819] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 848  [0:6:33.827] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 155 structureChanged: false Elapsed: 8ms
+Info 849  [0:6:33.827] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 850  [0:6:33.827] getCompletionData: Get current token: 0
+Info 851  [0:6:33.827] getCompletionData: Is inside comment: 0
+Info 852  [0:6:33.827] getCompletionData: Get previous token 1: 0
+Info 853  [0:6:33.827] getCompletionData: Get previous token 2: 0
+Info 854  [0:6:33.828] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 855  [0:6:33.832] getCompletionData: Semantic work: 4
+Info 856  [0:6:33.832] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 0
+Info 857  [0:6:36.449] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 858  [0:6:36.460] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 156 structureChanged: false Elapsed: 10ms
+Info 859  [0:6:36.460] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 860  [0:6:37.680] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 861  [0:6:37.691] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 157 structureChanged: false Elapsed: 11ms
+Info 862  [0:6:37.692] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 863  [0:6:39.283] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 864  [0:6:39.297] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 158 structureChanged: false Elapsed: 14ms
+Info 865  [0:6:39.297] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 866  [0:6:40.395] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 867  [0:6:40.407] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 159 structureChanged: false Elapsed: 12ms
+Info 868  [0:6:40.407] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 869  [0:6:40.810] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 870  [0:6:40.818] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 160 structureChanged: false Elapsed: 7ms
+Info 871  [0:6:40.818] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 872  [0:6:42.77] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 873  [0:6:42.89] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 161 structureChanged: false Elapsed: 12ms
+Info 874  [0:6:42.89] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 875  [0:6:43.983] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 876  [0:6:43.995] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 162 structureChanged: false Elapsed: 12ms
+Info 877  [0:6:43.995] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 878  [0:6:44.547] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 879  [0:6:44.561] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 163 structureChanged: false Elapsed: 13ms
+Info 880  [0:6:44.561] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 881  [0:6:58.149] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 882  [0:6:58.161] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 164 structureChanged: false Elapsed: 12ms
+Info 883  [0:6:58.161] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 884  [0:7:10.232] DirectoryWatcher:: Triggered with /users/ivy/projects/dotdex/lib/.#dotdex.js :: WatchInfo: /users/ivy/projects/dotdex/lib 0 Project: /dev/null/inferredProject1* WatchType: Failed Lookup Locations
+Info 885  [0:7:10.233] Elapsed:: 1ms DirectoryWatcher:: Triggered with /users/ivy/projects/dotdex/lib/.#dotdex.js :: WatchInfo: /users/ivy/projects/dotdex/lib 0 Project: /dev/null/inferredProject1* WatchType: Failed Lookup Locations
+Info 886  [0:7:10.839] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 887  [0:7:10.855] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 165 structureChanged: false Elapsed: 16ms
+Info 888  [0:7:10.855] Different program with same set of files:: oldProgram.structureIsReused:: 2
