@@ -26,6 +26,6 @@
   "dependencies": {
     "ncp": "^2.0.0",
     "rimraf": "^2.6.3",
-    "simple-git": "^1.110.0"
+    "simple-git": "^3.3.0"
   }
 }
